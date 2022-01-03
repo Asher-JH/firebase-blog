@@ -1,3 +1,4 @@
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 const cracoAlias = require('craco-alias');
 
 module.exports = {
@@ -7,7 +8,7 @@ module.exports = {
             options: {
                 baseUrl: './src',
                 source: 'tsconfig',
-                tsConfigPath: "./tsconfig.paths.json"
+                tsConfigPath: './tsconfig.paths.json',
             },
         },
     ],
