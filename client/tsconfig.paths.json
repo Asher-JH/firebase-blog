@@ -9,7 +9,8 @@
             "@constants/*": ["constants/*"],
             "@api/*": ["api/*"],
             "@routes/*": ["routes/*"],
-            "@assets/*": ["assets/*"]
+            "@assets/*": ["assets/*"],
+            "@layouts/*": ["layouts/*"]
         }
     }
 }

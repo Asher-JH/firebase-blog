@@ -12,6 +12,8 @@ import {
     useDisclosure,
 } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
+import MobileNav from './mobile-nav';
+import DesktopNav from './desktop-nav';
 
 const Navbar: React.FC = () => {
     const { isOpen, onToggle } = useDisclosure();
@@ -61,7 +63,9 @@ const Navbar: React.FC = () => {
                         Logo
                     </Text>
 
-                    <Flex display={{ base: 'none', md: 'flex' }} ml="10"></Flex>
+                    <Flex display={{ base: 'none', md: 'flex' }} ml="10">
+                        <DesktopNav />
+                    </Flex>
 
                     <Stack
                         flex={{ base: 1, md: 0 }}
@@ -94,7 +98,9 @@ const Navbar: React.FC = () => {
                     </Stack>
                 </Flex>
 
-                <Collapse in={isOpen} animateOpacity></Collapse>
+                <Collapse in={isOpen} animateOpacity>
+                    <MobileNav />
+                </Collapse>
             </Flex>
         </Box>
     );

@@ -4,7 +4,7 @@ import { WarningTwoIcon } from '@chakra-ui/icons';
 
 const NotFound: React.FC = () => {
     return (
-        <Center height="100vh">
+        <Center h="100">
             <Box
                 maxW="sm"
                 p="6"

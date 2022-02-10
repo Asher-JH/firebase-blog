@@ -4,7 +4,7 @@ type NavItem = {
     children?: {
         label: string;
         href: string;
-        subLabel: string;
+        subLabel?: string;
     }[];
 };
 

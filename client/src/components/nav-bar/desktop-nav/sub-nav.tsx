@@ -13,7 +13,7 @@ import { ChevronRightIcon } from '@chakra-ui/icons';
 type Props = {
     label: string;
     href: string;
-    subLabel: string;
+    subLabel?: string;
 };
 
 const SubNav: React.FC<Props> = ({ label, href, subLabel }) => (
